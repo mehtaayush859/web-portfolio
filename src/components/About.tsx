@@ -17,19 +17,20 @@ const About = () => {
           <AnimatedSection animation="slide-up" className="order-2 md:order-1">
             <div className="space-y-6">
               <p className="text-lg leading-relaxed">
-                I'm a passionate software engineer specializing in full-stack development with a focus 
-                on creating intuitive and performant web applications. With a strong foundation in 
-                computer science and years of practical experience, I love tackling complex problems
-                and turning ideas into reality through clean, efficient code.
+                I'm a passionate Software Engineer and Cybersecurity Enthusiast with a strong background in 
+                backend development, distributed systems, and AI-powered applications. Currently pursuing a 
+                Master's in Computer Science at Seattle University, I'm driven to create innovative solutions 
+                to complex technical challenges.
               </p>
               <p className="text-lg leading-relaxed">
-                My journey began with a fascination for how technology can transform lives. Today, I'm 
-                dedicated to crafting digital solutions that not only meet technical requirements but 
-                also provide exceptional user experiences.
+                My expertise spans multiple languages and frameworks including Python, Java, JavaScript, React.js, 
+                Node.js, Flask, and Django. I've developed scalable RESTful APIs, implemented gRPC-based microservices, 
+                and built real-time object detection systems leveraging modern technologies.
               </p>
               <p className="text-lg leading-relaxed">
-                When I'm not coding, you can find me exploring new technologies, contributing to 
-                open-source projects, or sharing my knowledge through mentoring and technical articles.
+                Beyond development, I'm particularly passionate about cybersecurity, cloud computing, and AI-driven 
+                innovations. My hands-on experience in penetration testing and security analysis complements my 
+                software engineering skills, allowing me to build not only functional but also secure applications.
               </p>
             </div>
           </AnimatedSection>
@@ -44,8 +45,8 @@ const About = () => {
                   <div>
                     <h4 className="text-lg font-semibold mb-1">Technical Skills</h4>
                     <p className="text-muted-foreground">
-                      Proficient in modern web technologies and practices, with expertise in 
-                      React.js, Node.js, and MongoDB.
+                      Proficient in Python, Java, JavaScript, React.js, Node.js, Flask, and Django.
+                      Experienced with RESTful APIs, gRPC, and real-time systems.
                     </p>
                   </div>
                 </div>
@@ -59,8 +60,8 @@ const About = () => {
                   <div>
                     <h4 className="text-lg font-semibold mb-1">Professional Experience</h4>
                     <p className="text-muted-foreground">
-                      Worked with diverse teams to deliver scalable applications for various 
-                      industries, from startups to enterprise clients.
+                      Built scalable backend systems, developed AI-powered applications,
+                      and implemented secure software solutions across multiple domains.
                     </p>
                   </div>
                 </div>
@@ -74,8 +75,8 @@ const About = () => {
                   <div>
                     <h4 className="text-lg font-semibold mb-1">Education</h4>
                     <p className="text-muted-foreground">
-                      Bachelor's degree in Computer Science with additional certifications 
-                      in web development and cloud technologies.
+                      Currently pursuing a Master's in Computer Science at Seattle University,
+                      with focus on advanced software engineering and cybersecurity.
                     </p>
                   </div>
                 </div>
@@ -89,8 +90,8 @@ const About = () => {
                   <div>
                     <h4 className="text-lg font-semibold mb-1">Passion</h4>
                     <p className="text-muted-foreground">
-                      Dedicated to continuous learning and creating accessible, 
-                      user-centered applications that make a positive impact.
+                      Deeply passionate about cybersecurity, cloud computing, and AI-driven innovations,
+                      constantly learning and applying new technologies to solve real-world problems.
                     </p>
                   </div>
                 </div>
