@@ -21,12 +21,6 @@ const Navbar = () => {
     { name: 'Projects', href: '#projects' },
     { name: 'Skills', href: '#skills' },
     { name: 'Contact', href: '#contact' },
-    { 
-      name: 'Resume', 
-      href: '/Ayush_Mehta_Resume.pdf', 
-      isDownload: true,
-      icon: <FileText size={16} className="mr-1" />
-    },
   ];
 
   return (
