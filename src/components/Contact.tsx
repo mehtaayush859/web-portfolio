@@ -154,10 +154,10 @@ const Contact = () => {
                   <div>
                     <h4 className="text-lg font-semibold mb-1">Email</h4>
                     <a 
-                      href="mailto:contact@example.com" 
+                      href="mailto:mehtaayush144@gmail.com" 
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      contact@example.com
+                      mehtaayush144@gmail.com
                     </a>
                   </div>
                 </div>
@@ -171,7 +171,7 @@ const Contact = () => {
                   <div>
                     <h4 className="text-lg font-semibold mb-1">Location</h4>
                     <p className="text-muted-foreground">
-                      San Francisco, CA
+                      Seattle, WA, USA
                     </p>
                     <p className="text-sm text-muted-foreground mt-1">
                       Available for remote work worldwide
