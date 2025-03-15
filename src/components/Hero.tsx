@@ -62,7 +62,7 @@ const Hero = () => {
         <AnimatedSection animation="fade-in" delay={900}>
           <div className="flex justify-center space-x-6">
             <a
-              href="https://github.com"
+              href="https://github.com/mehtaayush859"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-secondary text-foreground hover:text-primary transition-colors duration-200"
@@ -71,7 +71,7 @@ const Hero = () => {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/ayushmehta44"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-secondary text-foreground hover:text-primary transition-colors duration-200"
