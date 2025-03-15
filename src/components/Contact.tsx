@@ -210,11 +210,11 @@ const Contact = () => {
                   Currently available for freelance projects and full-time opportunities.
                 </p>
                 <div className="h-2 w-full bg-secondary rounded-full overflow-hidden">
-                  <div className="h-full bg-primary rounded-full" style={{ width: '70%' }}></div>
+                  <div className="h-full bg-primary rounded-full" style={{ width: '100%' }}></div>
                 </div>
                 <div className="flex justify-between text-sm mt-2">
-                  <span>70% Availability</span>
-                  <span>Updated: May 2023</span>
+                  <span>100% Availability</span>
+                  <span>Updated: March 2025</span>
                 </div>
               </div>
             </div>

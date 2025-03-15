@@ -1,7 +1,6 @@
-
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, FileText } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,6 +21,12 @@ const Navbar = () => {
     { name: 'Projects', href: '#projects' },
     { name: 'Skills', href: '#skills' },
     { name: 'Contact', href: '#contact' },
+    { 
+      name: 'Resume', 
+      href: '/Ayush_Mehta_Resume.pdf', 
+      isDownload: true,
+      icon: <FileText size={16} className="mr-1" />
+    },
   ];
 
   return (
@@ -45,8 +50,10 @@ const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-medium relative py-2 px-1 text-foreground hover:text-primary transition-colors duration-200 group"
+              download={link.isDownload ? "Ayush_Mehta_Resume.pdf" : undefined}
+              className="text-sm font-medium relative py-2 px-1 text-foreground hover:text-primary transition-colors duration-200 group flex items-center"
             >
+              {link.icon}
               {link.name}
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
             </a>
@@ -75,9 +82,11 @@ const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-xl font-medium text-foreground hover:text-primary transition-colors duration-200"
+              download={link.isDownload ? "Ayush_Mehta_Resume.pdf" : undefined}
+              className="text-xl font-medium text-foreground hover:text-primary transition-colors duration-200 flex items-center"
               onClick={() => setMobileMenuOpen(false)}
             >
+              {link.icon}
               {link.name}
             </a>
           ))}

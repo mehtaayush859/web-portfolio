@@ -47,7 +47,7 @@ const Projects = () => {
           </h3>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Explore some of my recent work, showcasing my expertise in building 
-            full-stack applications with React, Node.js, and MongoDB.
+            amazing applications and some cool stuff for fun.
           </p>
         </AnimatedSection>
 
@@ -61,7 +61,7 @@ const Projects = () => {
 
         <AnimatedSection className="mt-12 text-center">
           <a 
-            href="https://github.com" 
+            href="https://github.com/mehtaayush859/" 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
