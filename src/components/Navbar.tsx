@@ -23,11 +23,7 @@ const Navbar = () => {
     { name: 'Contact', href: '#contact' },
     { 
       name: 'Resume', 
-<<<<<<< HEAD
       href: '/Ayush_Mehta_Resume.pdf', 
-=======
-      href: '/resume.pdf', 
->>>>>>> 769d467fa1319ccc61f94fb7d560a91a169cafba
       isDownload: true,
       icon: <FileText size={16} className="mr-1" />
     },
