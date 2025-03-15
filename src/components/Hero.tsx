@@ -21,15 +21,15 @@ const Hero = () => {
       <div className="max-w-4xl mx-auto z-10 text-center">
         <AnimatedSection animation="fade-in" delay={100}>
           <div className="inline-block mb-4 px-4 py-1.5 rounded-full bg-primary/10 text-primary font-medium text-sm">
-            Software Engineer
+            Software Engineer & Cybersecurity Enthusiast
           </div>
         </AnimatedSection>
 
         <AnimatedSection animation="fade-in" delay={300}>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 tracking-tight">
-            Crafting digital experiences with{' '}
+            Hi, I'm{' '}
             <span className="text-primary relative">
-              code
+              Ayush Mehta
               <span className="absolute -bottom-2 left-0 right-0 h-1 bg-primary/30 rounded-full"></span>
             </span>
           </h1>
@@ -37,8 +37,8 @@ const Hero = () => {
 
         <AnimatedSection animation="fade-in" delay={500}>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            I build modern, responsive web applications using React, Node.js, and MongoDB.
-            Focused on creating elegant solutions to complex problems.
+            Results-driven Software Engineer with expertise in backend development, distributed systems, and AI-powered applications. 
+            Currently pursuing a Master's in Computer Science at Seattle University.
           </p>
         </AnimatedSection>
 
