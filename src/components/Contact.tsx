@@ -5,12 +5,14 @@ import { Mail, MapPin, Send, Github, Linkedin } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import emailjs from 'emailjs-com';
 import { useToast } from "@/hooks/use-toast";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 
 const Contact = () => {
   const { toast } = useToast();
   const [formState, setFormState] = useState({
     name: '',
     email: '',
+    subject: '',
     message: '',
   });
 
@@ -37,6 +39,7 @@ const Contact = () => {
       const templateParams = {
         from_name: formState.name,
         from_email: formState.email,
+        subject: formState.subject,
         message: formState.message,
       };
       
@@ -44,7 +47,7 @@ const Contact = () => {
       
       setIsSubmitting(false);
       setIsSubmitted(true);
-      setFormState({ name: '', email: '', message: '' });
+      setFormState({ name: '', email: '', subject: '', message: '' });
       
       toast({
         title: "Message sent!",
@@ -83,6 +86,16 @@ const Contact = () => {
           <AnimatedSection animation="slide-up" className="order-2 md:order-1">
             <div className="glass p-8 rounded-2xl h-full">
               <h4 className="text-xl font-semibold mb-6">Send a Message</h4>
+              
+              {!process.env.NODE_ENV || process.env.NODE_ENV === 'development' ? (
+                <Alert className="mb-6 bg-amber-50 border-amber-200 dark:bg-amber-950/20 dark:border-amber-800">
+                  <AlertDescription>
+                    <p className="text-amber-700 dark:text-amber-400">
+                      <strong>Development Mode:</strong> EmailJS is configured but emails won't be sent until you replace the placeholder IDs with your actual EmailJS credentials.
+                    </p>
+                  </AlertDescription>
+                </Alert>
+              ) : null}
               
               {isSubmitted ? (
                 <div className="text-center py-8">
@@ -125,6 +138,22 @@ const Contact = () => {
                       onChange={handleChange}
                       className="w-full px-4 py-2 rounded-lg border border-border bg-background/50 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                       placeholder="your.email@example.com"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="subject" className="block text-sm font-medium mb-1">
+                      Subject
+                    </label>
+                    <input
+                      id="subject"
+                      name="subject"
+                      type="text"
+                      required
+                      value={formState.subject}
+                      onChange={handleChange}
+                      className="w-full px-4 py-2 rounded-lg border border-border bg-background/50 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                      placeholder="What is this regarding?"
                     />
                   </div>
                   
