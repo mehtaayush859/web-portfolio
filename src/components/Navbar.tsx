@@ -41,7 +41,7 @@ const Navbar = () => {
           href="#home" 
           className="text-xl font-display font-semibold tracking-tighter text-primary"
         >
-          dev<span className="text-foreground">portfolio</span>
+          AM
         </a>
 
         {/* Desktop Navigation */}
