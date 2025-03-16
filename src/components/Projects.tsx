@@ -5,34 +5,34 @@ import ProjectCard, { ProjectProps } from './ProjectCard';
 const Projects = () => {
   const projects: ProjectProps[] = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce application with user authentication, product management, cart functionality, and payment processing using Stripe.",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=6000",
-      tags: ["React", "Node.js", "MongoDB", "Express", "Stripe API"],
-      github: "https://github.com",
+      title: "Real-Time Object Detection System",
+      description: "Built a synchronous object detection system to address the challenge of accurate tracing in resource constrained envs.",
+      image: "./obj_dec_1.jpg",
+      tags: ["Python", "Open CV", "TensorFlow", "Excel", "REST API"],
+      github: "https://github.com/mehtaayush859/real_time_object_detection",
       demo: "https://example.com"
     },
     {
       title: "Task Management System",
       description: "A collaborative task management application with real-time updates, team assignments, and progress tracking functionality.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=6000",
-      tags: ["React", "Firebase", "Material UI", "Redux"],
-      github: "https://github.com",
+      image: "./list_to_do_1.jpg",
+      tags: ["HTML", "CSS", "Python", "Javascript"],
+      github: "https://github.com/mehtaayush859/task_manager",
       demo: "https://example.com"
     },
     {
-      title: "Health & Fitness Tracker",
-      description: "A comprehensive fitness tracking application that allows users to log workouts, track nutrition, and visualize progress through interactive charts.",
-      image: "https://images.unsplash.com/photo-1669553389028-f16a367e05b4?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=6000",
-      tags: ["React Native", "MongoDB", "Node.js", "Chart.js"],
-      github: "https://github.com",
+      title: "Casting Agency App",
+      description: "A comprehensive casting application that allows users to cast celebrities and actors to work in their team.",
+      image: "./cast_agency_1.jpg",
+      tags: ["Android", "Kotlin", "Firebase", "Android Studio"],
+      github: "https://github.com/mehtaayush859/casting_agency_app",
     },
     {
-      title: "Real Estate Marketplace",
-      description: "A property listing platform with advanced search, filtering, and mapping features. Includes user profiles, saved properties, and inquiry management.",
-      image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=6000",
-      tags: ["React", "MongoDB", "Express", "Google Maps API"],
-      github: "https://github.com",
+      title: "Password Cracking Tool",
+      description: "A fun scritp and a tool for cracking password using payloads provided in common password file.",
+      image: "./pass_crack_1.jpg",
+      tags: ["Python", "Penetration Testing", "Cyber Security", "Payloads"],
+      github: "https://github.com/mehtaayush859/password_generater_and_cracker",
       demo: "https://example.com"
     },
   ];

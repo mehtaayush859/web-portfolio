@@ -32,6 +32,12 @@ const About = () => {
                 innovations. My hands-on experience in penetration testing and security analysis complements my 
                 software engineering skills, allowing me to build not only functional but also secure applications.
               </p>
+              <p className="text-lg leading-relaxed">
+              With my expertise in software development and deep understanding of cyber security principles, 
+              I strive to create secure and efficient solutions. I am dedicated to continuously expanding 
+              my knowledge and staying up-to-date with the latest industry trends to deliver innovative and 
+              resilient software applications.
+              </p>
             </div>
           </AnimatedSection>
 

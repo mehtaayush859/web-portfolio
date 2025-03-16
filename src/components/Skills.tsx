@@ -5,15 +5,22 @@ import { cn } from '@/lib/utils';
 
 type Skill = {
   name: string;
-  category: 'frontend' | 'backend' | 'database' | 'tools';
+  category: 'languages'| 'frontend' | 'backend' | 'database' | 'cloud' | 'tools';
   level: number; // 1-5
   icon?: React.ReactNode;
 };
 
 const Skills = () => {
-  const [activeTab, setActiveTab] = useState<'all' | 'frontend' | 'backend' | 'database' | 'tools'>('all');
+  const [activeTab, setActiveTab] = useState<'all' | 'languages' | 'frontend' | 'backend' | 'database' | 'cloud' | 'tools'>('all');
   
   const skills: Skill[] = [
+    //Languages
+    {name: 'Python', category: 'languages', level: 5 },
+    {name: 'Java', category: 'languages', level: 4 },
+    {name: 'C++', category: 'languages', level: 4 },
+    {name: 'C', category: 'languages', level: 4 },
+    {name: 'Bash', category: 'languages', level: 3 },
+
     // Frontend
     { name: 'React', category: 'frontend', level: 5 },
     { name: 'Next.js', category: 'frontend', level: 4 },
@@ -22,31 +29,36 @@ const Skills = () => {
     { name: 'HTML5', category: 'frontend', level: 5 },
     { name: 'CSS3', category: 'frontend', level: 5 },
     { name: 'Tailwind CSS', category: 'frontend', level: 5 },
-    { name: 'Redux', category: 'frontend', level: 4 },
-    { name: 'Material UI', category: 'frontend', level: 4 },
     
     // Backend
     { name: 'Node.js', category: 'backend', level: 5 },
     { name: 'Express', category: 'backend', level: 5 },
+    {name: 'Django', category: 'backend', level: 5 },
+    {name: 'Flask', category: 'backend', level: 5 },
     { name: 'GraphQL', category: 'backend', level: 3 },
     { name: 'REST APIs', category: 'backend', level: 5 },
     { name: 'Authentication', category: 'backend', level: 4 },
-    { name: 'Socket.io', category: 'backend', level: 3 },
+    { name: 'Socket', category: 'backend', level: 3 },
     
     // Database
+    { name: 'MySQL', category: 'database', level: 5 },
     { name: 'MongoDB', category: 'database', level: 5 },
-    { name: 'Mongoose', category: 'database', level: 4 },
     { name: 'PostgreSQL', category: 'database', level: 3 },
     { name: 'Redis', category: 'database', level: 3 },
     { name: 'Firebase', category: 'database', level: 4 },
+
+    //Cloud
+    {name: 'AWS', category: 'cloud', level: 5 },
+    { name: 'Azure', category: 'cloud', level: 4 },
+    { name: 'GCP', category: 'cloud', level: 4 },
     
     // Tools
     { name: 'Git', category: 'tools', level: 5 },
+    { name: 'SVN', category: 'tools', level:5},
     { name: 'Docker', category: 'tools', level: 3 },
-    { name: 'AWS', category: 'tools', level: 3 },
     { name: 'CI/CD', category: 'tools', level: 4 },
-    { name: 'Jest', category: 'tools', level: 4 },
-    { name: 'Webpack', category: 'tools', level: 3 },
+    { name: 'Jira', category: 'tools', level: 4 },
+    { name: 'IDEs', category: 'tools', level: 3 },
   ];
   
   const filteredSkills = activeTab === 'all' 
@@ -69,7 +81,7 @@ const Skills = () => {
         
         <AnimatedSection delay={100}>
           <div className="flex flex-wrap justify-center gap-2 mb-8">
-            {(['all', 'frontend', 'backend', 'database', 'tools'] as const).map((tab) => (
+            {(['all', 'languages', 'frontend', 'backend', 'database', 'cloud', 'tools'] as const).map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}

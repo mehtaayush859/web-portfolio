@@ -15,19 +15,7 @@ const Footer = () => {
   return (
     <footer className="py-10 px-6 bg-secondary/30 relative">
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-          <div className="mb-6 md:mb-0">
-            <a 
-              href="#home" 
-              className="text-xl font-display font-semibold tracking-tighter text-primary"
-            >
-              dev<span className="text-foreground">portfolio</span>
-            </a>
-            <p className="text-muted-foreground mt-2 text-sm max-w-xs">
-              Crafting exceptional digital experiences with clean code and modern technologies.
-            </p>
-          </div>
-          
+        <div className="flex flex-col md:flex-row justify-between items-center mb-8">       
           <div className="flex flex-col items-center md:items-end">
             <div className="flex space-x-4 mb-4">
               <a
