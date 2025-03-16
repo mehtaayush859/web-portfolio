@@ -29,7 +29,7 @@ const Projects = () => {
     },
     {
       title: "Password Cracking Tool",
-      description: "A fun scritp and a tool for cracking password using payloads provided in common password file.",
+      description: "A fun script and a tool for cracking password using payloads provided in common password file.",
       image: "./pass_crack_1.jpg",
       tags: ["Python", "Penetration Testing", "Cyber Security", "Payloads"],
       github: "https://github.com/mehtaayush859/password_generater_and_cracker",
