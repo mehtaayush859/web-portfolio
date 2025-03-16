@@ -13,7 +13,6 @@ const Contact = () => {
   const [formState, setFormState] = useState({
     name: '',
     email: '',
-    subject: '',
     message: '',
   });
 
@@ -104,16 +103,6 @@ const Contact = () => {
             <div className="glass p-8 rounded-2xl h-full">
               <h4 className="text-xl font-semibold mb-6">Send a Message</h4>
               
-              {!process.env.NODE_ENV || process.env.NODE_ENV === 'development' ? (
-                <Alert className="mb-6 bg-amber-50 border-amber-200 dark:bg-amber-950/20 dark:border-amber-800">
-                  <AlertDescription>
-                    <p className="text-amber-700 dark:text-amber-400">
-                      <strong>Development Mode:</strong> EmailJS is configured but emails won't be sent until you replace the placeholder IDs with your actual EmailJS credentials.
-                    </p>
-                  </AlertDescription>
-                </Alert>
-              ) : null}
-              
               {isSubmitted ? (
                 <div className="text-center py-8">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -155,22 +144,6 @@ const Contact = () => {
                       onChange={handleChange}
                       className="w-full px-4 py-2 rounded-lg border border-border bg-background/50 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                       placeholder="your.email@example.com"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium mb-1">
-                      Subject
-                    </label>
-                    <input
-                      id="subject"
-                      name="subject"
-                      type="text"
-                      required
-                      value={formState.subject}
-                      onChange={handleChange}
-                      className="w-full px-4 py-2 rounded-lg border border-border bg-background/50 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                      placeholder="What is this regarding?"
                     />
                   </div>
                   
