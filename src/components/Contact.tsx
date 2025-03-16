@@ -33,9 +33,9 @@ const Contact = () => {
     
     try {
       // Replace these with your actual EmailJS service, template and user IDs
-      const serviceId = 'service_w2bb3c1';
-      const templateId = 'template_uhh0ajr';
-      const userId = 'duCxfQt3CMZ45V9T_';
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const userId = import.meta.env.VITE_EMAILJS_USER_ID;
       
       const templateParams = {
         from_name: formState.name,
