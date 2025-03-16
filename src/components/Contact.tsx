@@ -4,8 +4,11 @@ import { Mail, MapPin, Send, Github, Linkedin } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import emailjs from 'emailjs-com';
 import { useToast } from "@/hooks/use-toast";
+import emailjs from 'emailjs-com';
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
+  const { toast } = useToast();
   const { toast } = useToast();
   const [formState, setFormState] = useState({
     name: '',
@@ -23,6 +26,7 @@ const Contact = () => {
     });
   };
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -50,8 +54,23 @@ const Contact = () => {
         description: "Your message has been sent successfully. I'll get back to you soon.",
       });
       
+      toast({
+        title: "Message sent!",
+        description: "Your message has been sent successfully. I'll get back to you soon.",
+      });
+      
       // Reset submission status after 5 seconds
       setTimeout(() => setIsSubmitted(false), 5000);
+    } catch (error) {
+      console.error('Failed to send the message:', error);
+      setIsSubmitting(false);
+      
+      toast({
+        title: "Message failed to send",
+        description: "There was an error sending your message. Please try again.",
+        variant: "destructive",
+      });
+    }
     } catch (error) {
       console.error('Failed to send the message:', error);
       setIsSubmitting(false);
