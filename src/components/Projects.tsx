@@ -9,31 +9,28 @@ const Projects = () => {
       description: "Built a synchronous object detection system to address the challenge of accurate tracing in resource constrained envs.",
       image: "./obj_dec_1.jpg",
       tags: ["Python", "Open CV", "TensorFlow", "Excel", "REST API"],
-      github: "https://github.com/mehtaayush859/real_time_object_detection",
-      demo: "https://example.com"
+      github: "https://github.com/mehtaayush859/real_time_object_detection"
     },
     {
       title: "Task Management System",
       description: "A collaborative task management application with real-time updates, team assignments, and progress tracking functionality.",
       image: "./list_to_do_1.jpg",
       tags: ["HTML", "CSS", "Python", "Javascript"],
-      github: "https://github.com/mehtaayush859/task_manager",
-      demo: "https://example.com"
+      github: "https://github.com/mehtaayush859/task_manager"
     },
     {
       title: "Casting Agency App",
       description: "A comprehensive casting application that allows users to cast celebrities and actors to work in their team.",
       image: "./cast_agency_1.jpg",
       tags: ["Android", "Kotlin", "Firebase", "Android Studio"],
-      github: "https://github.com/mehtaayush859/casting_agency_app",
+      github: "https://github.com/mehtaayush859/casting_agency_app"
     },
     {
       title: "Password Cracking Tool",
       description: "A fun script and a tool for cracking password using payloads provided in common password file.",
       image: "./pass_crack_1.jpg",
       tags: ["Python", "Penetration Testing", "Cyber Security", "Payloads"],
-      github: "https://github.com/mehtaayush859/password_generater_and_cracker",
-      demo: "https://example.com"
+      github: "https://github.com/mehtaayush859/password_generater_and_cracker"
     },
   ];
 
