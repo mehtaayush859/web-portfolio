@@ -5,18 +5,21 @@ import { cn } from '@/lib/utils';
 
 type Skill = {
   name: string;
-  category: 'languages'| 'frontend' | 'backend' | 'database' | 'cloud' | 'tools';
+  category: 'languages'| 'frontend' | 'backend' | 'database' | 'cloud' | 'DevOps';
   level: number; // 1-5
   icon?: React.ReactNode;
 };
 
 const Skills = () => {
-  const [activeTab, setActiveTab] = useState<'all' | 'languages' | 'frontend' | 'backend' | 'database' | 'cloud' | 'tools'>('all');
+  const [activeTab, setActiveTab] = useState<'all' | 'languages' | 'frontend' | 'backend' | 'database' | 'cloud' | 'DevOps'>('all');
   
   const skills: Skill[] = [
     //Languages
     {name: 'Python', category: 'languages', level: 5 },
     {name: 'Java', category: 'languages', level: 4 },
+    {name: 'JavaScript', category: 'languages', level: 4 },
+    {name: 'TypeScript', category: 'languages', level: 4 },
+    {name: 'Golang', category: 'languages', level: 2},
     {name: 'C++', category: 'languages', level: 4 },
     {name: 'C', category: 'languages', level: 4 },
     {name: 'Bash', category: 'languages', level: 3 },
@@ -44,6 +47,7 @@ const Skills = () => {
     { name: 'MySQL', category: 'database', level: 5 },
     { name: 'MongoDB', category: 'database', level: 5 },
     { name: 'PostgreSQL', category: 'database', level: 3 },
+    {name: 'DynamoDB', category: 'database', level: 3 },
     { name: 'Redis', category: 'database', level: 3 },
     { name: 'Firebase', category: 'database', level: 4 },
 
@@ -51,14 +55,19 @@ const Skills = () => {
     {name: 'AWS', category: 'cloud', level: 5 },
     { name: 'Azure', category: 'cloud', level: 4 },
     { name: 'GCP', category: 'cloud', level: 4 },
+    { name: 'IBM', category: 'cloud', level: 4 },
     
-    // Tools
-    { name: 'Git', category: 'tools', level: 5 },
-    { name: 'SVN', category: 'tools', level:5},
-    { name: 'Docker', category: 'tools', level: 3 },
-    { name: 'CI/CD', category: 'tools', level: 4 },
-    { name: 'Jira', category: 'tools', level: 4 },
-    { name: 'IDEs', category: 'tools', level: 3 },
+    
+    
+    // DevOps
+    { name: 'Git', category: 'DevOps', level: 5 },
+    { name: 'SVN', category: 'DevOps', level:5},
+    { name: 'Docker', category: 'DevOps', level: 3 },
+    {name: 'Kuberbetes', category: 'DevOps', level: 4 },
+    {name: 'Kafka', category: 'DevOps', level: 4 },
+    { name: 'CI/CD', category: 'DevOps', level: 4 },
+    { name: 'Jira', category: 'DevOps', level: 4 },
+    { name: 'IDEs', category: 'DevOps', level: 3 },
   ];
   
   const filteredSkills = activeTab === 'all' 
@@ -81,7 +90,7 @@ const Skills = () => {
         
         <AnimatedSection delay={100}>
           <div className="flex flex-wrap justify-center gap-2 mb-8">
-            {(['all', 'languages', 'frontend', 'backend', 'database', 'cloud', 'tools'] as const).map((tab) => (
+            {(['all', 'languages', 'frontend', 'backend', 'database', 'cloud', 'DevOps'] as const).map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
