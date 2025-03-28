@@ -12,11 +12,11 @@ const Projects = () => {
       github: "https://github.com/mehtaayush859/real_time_object_detection"
     },
     {
-      title: "Task Management System",
-      description: "A collaborative task management application with real-time updates, team assignments, and progress tracking functionality.",
-      image: "./list_to_do_1.jpg",
-      tags: ["HTML", "CSS", "Python", "Javascript"],
-      github: "https://github.com/mehtaayush859/task_manager"
+      title: "Image Processing System",
+      description: "A CLI Interface portal to change, edit, modify, resize and perform various operations on images in one single API call.",
+      image: "./individual_project_img.png",
+      tags: ["Python", "Javascript", "GRPC", "ProtoBuff"],
+      github: "https://github.com/mehtaayush859/image_processing_system"
     },
     {
       title: "Casting Agency App",
