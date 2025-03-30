@@ -17,7 +17,7 @@ const ProjectCard = ({ title, description, image, tags, github, demo }: ProjectP
 
   return (
     <div 
-      className="group relative overflow-hidden rounded-xl bg-card border border-border/50 transition-all duration-300 hover:shadow-lg"
+      className="group relative overflow-hidden rounded-xl bg-card border border-muted transition-all duration-300 hover:shadow-lg"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="pt-6 mt-6 border-t border-border/50 text-sm text-muted-foreground flex flex-col md:flex-row justify-between items-center">
+        <div className="pt-6 mt-6 border-t border-muted text-sm text-muted-foreground flex flex-col md:flex-row justify-between items-center">
           <div>
             © {currentYear} Portfolio. All rights reserved.
           </div>

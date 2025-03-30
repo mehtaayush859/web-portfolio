@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -113,7 +114,7 @@ const Contact = () => {
             </div>
           </div>
           
-          <div className="glass p-6 rounded-xl">
+          <div className="bg-card p-6 rounded-xl border border-border/50">
             <h3 className="text-xl font-semibold mb-6">Send a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
